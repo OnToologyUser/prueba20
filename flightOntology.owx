@@ -1,0 +1,1701 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/fgpre/ontologies/2024/3/FlightSatisfactionSurveyOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/fgpre/ontologies/2024/3/FlightSatisfactionSurveyOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/fgpre/ontologies/2024/3/FlightSatisfactionSurveyOntology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Author: Fernando Grima Prescolí</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Tittle: Ontology for assessing customer satisfaction levels of airline companies through surveys</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Aircraft_Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airline_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirportInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuthorCountry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuthorInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Destination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlightDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlightInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlightSurvey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlightSurveyInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flight_Survey_Qualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flight_Survey_Recommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flight_Survey_Verification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NegativeFlightReview"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negative_Recommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negative_Verification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeutralFlightReview"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Origin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PositiveFlightReview"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Positive_Recommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Positive_Verification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Published_Date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeatInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeatType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TripReason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAircraft"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAirline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAirportDestination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAirportOrigin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAuthorCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAuthorTripReason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRecommendation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSeatType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVerification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Flight_Date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_Published_Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBodyText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFlySurveyId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRatingValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRecommendationValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTtittle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVerificationValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_Flight_Date_Value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airbus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Boeing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Business"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Business_Class"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Couple_Leisure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Economy_Class"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Family_Leisure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#First_Class"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madrid_Barajas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Portugal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Portugal_Lisboa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Premium_Economy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Qatar_Airways"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ryanair"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Solo_Leisure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#flight_survey_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#flightdate1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2024"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aircraft_Company"/>
+        <Class IRI="#FlightInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airline_Information"/>
+        <Class IRI="#FlightSurveyInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirportInformation"/>
+        <Class IRI="#FlightInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuthorCountry"/>
+        <Class IRI="#AuthorInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuthorInformation"/>
+        <Class IRI="#FlightSurveyInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <Class IRI="#AirportInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlightDate"/>
+        <Class IRI="#FlightInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlightInformation"/>
+        <Class IRI="#FlightSurveyInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flight_Survey_Qualifier"/>
+        <Class IRI="#FlightSurvey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flight_Survey_Recommendation"/>
+        <Class IRI="#FlightSurvey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flight_Survey_Verification"/>
+        <Class IRI="#FlightSurvey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegativeFlightReview"/>
+        <Class IRI="#Flight_Survey_Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negative_Recommendation"/>
+        <Class IRI="#Flight_Survey_Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negative_Verification"/>
+        <Class IRI="#Flight_Survey_Verification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeutralFlightReview"/>
+        <Class IRI="#Flight_Survey_Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Origin"/>
+        <Class IRI="#AirportInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositiveFlightReview"/>
+        <Class IRI="#Flight_Survey_Qualifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Positive_Recommendation"/>
+        <Class IRI="#Flight_Survey_Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Positive_Verification"/>
+        <Class IRI="#Flight_Survey_Verification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Published_Date"/>
+        <Class IRI="#FlightSurveyInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeatInformation"/>
+        <Class IRI="#FlightSurveyInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeatType"/>
+        <Class IRI="#SeatInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TripReason"/>
+        <Class IRI="#AuthorInformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <Class IRI="#Published_Date"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#NegativeFlightReview"/>
+        <Class IRI="#NeutralFlightReview"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NegativeFlightReview"/>
+        <Class IRI="#PositiveFlightReview"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Negative_Recommendation"/>
+        <Class IRI="#Positive_Recommendation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Negative_Verification"/>
+        <Class IRI="#Positive_Verification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NeutralFlightReview"/>
+        <Class IRI="#PositiveFlightReview"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Aircraft_Company"/>
+        <NamedIndividual IRI="#Airbus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aircraft_Company"/>
+        <NamedIndividual IRI="#Boeing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TripReason"/>
+        <NamedIndividual IRI="#Business"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeatType"/>
+        <NamedIndividual IRI="#Business_Class"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TripReason"/>
+        <NamedIndividual IRI="#Couple_Leisure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeatType"/>
+        <NamedIndividual IRI="#Economy_Class"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TripReason"/>
+        <NamedIndividual IRI="#Family_Leisure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeatType"/>
+        <NamedIndividual IRI="#First_Class"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Origin"/>
+        <NamedIndividual IRI="#Madrid_Barajas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AuthorCountry"/>
+        <NamedIndividual IRI="#Portugal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Destination"/>
+        <NamedIndividual IRI="#Portugal_Lisboa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeatType"/>
+        <NamedIndividual IRI="#Premium_Economy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airline_Information"/>
+        <NamedIndividual IRI="#Qatar_Airways"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airline_Information"/>
+        <NamedIndividual IRI="#Ryanair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TripReason"/>
+        <NamedIndividual IRI="#Solo_Leisure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AuthorCountry"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FlightSurvey"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FlightDate"/>
+        <NamedIndividual IRI="#flightdate1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Year"/>
+        <NamedIndividual IRI="#2023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Year"/>
+        <NamedIndividual IRI="#2024"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAircraft"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <NamedIndividual IRI="#Airbus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAirline"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <NamedIndividual IRI="#Ryanair"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAirportDestination"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <NamedIndividual IRI="#Portugal_Lisboa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAirportOrigin"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <NamedIndividual IRI="#Madrid_Barajas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthorCountry"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthorTripReason"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <NamedIndividual IRI="#Business"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeatType"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <NamedIndividual IRI="#First_Class"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Flight_Date"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <NamedIndividual IRI="#flightdate1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_Published_Date"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <NamedIndividual IRI="#2023"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBodyText"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <Literal>The service was bad, a stewardess was rude and the seats were too small</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFlySurveyId"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRatingValue"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRecommendationValue"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <Literal>no</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTtittle"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <Literal>Bad Service</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVerificationValue"/>
+        <NamedIndividual IRI="#flight_survey_001"/>
+        <Literal>yes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_Flight_Date_Value"/>
+        <NamedIndividual IRI="#flightdate1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-10T10:10:10</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAircraft"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAirline"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAirportDestination"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAirportOrigin"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAuthorCountry"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAuthorTripReason"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRating"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRecommendation"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSeatType"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasVerification"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Flight_Date"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_Published_Date"/>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </SubObjectPropertyOf>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAircraft"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAirline"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAirportDestination"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAirportOrigin"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAuthorCountry"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAuthorTripReason"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRating"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRecommendation"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSeatType"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasVerification"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_Flight_Date"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_Published_Date"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAircraft"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAirline"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAirportDestination"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAirportOrigin"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAuthorCountry"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAuthorTripReason"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRating"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRecommendation"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSeatType"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVerification"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Flight_Date"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_Published_Date"/>
+        <Class IRI="#FlightSurvey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAircraft"/>
+        <Class IRI="#Aircraft_Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAirline"/>
+        <Class IRI="#Airline_Information"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAirportDestination"/>
+        <Class IRI="#Destination"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAirportOrigin"/>
+        <Class IRI="#Origin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAuthorCountry"/>
+        <Class IRI="#AuthorCountry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAuthorTripReason"/>
+        <Class IRI="#TripReason"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFlightSurveyInformation"/>
+        <Class IRI="#FlightSurveyInformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSeatType"/>
+        <Class IRI="#SeatType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Flight_Date"/>
+        <Class IRI="#FlightDate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_Published_Date"/>
+        <Class IRI="#Year"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasVerificationValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasBodyText"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasFlySurveyId"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasRatingValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasRecommendationValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasTtittle"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasVerificationValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#has_Flight_Date_Value"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBodyText"/>
+        <Class IRI="#FlightSurvey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFlySurveyId"/>
+        <Class IRI="#FlightSurvey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRatingValue"/>
+        <Class IRI="#FlightSurvey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRecommendationValue"/>
+        <Class IRI="#FlightSurvey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTtittle"/>
+        <Class IRI="#FlightSurvey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVerificationValue"/>
+        <Class IRI="#FlightSurvey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_Flight_Date_Value"/>
+        <Class IRI="#FlightDate"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBodyText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFlySurveyId"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRatingValue"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRecommendationValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTtittle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVerificationValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_Flight_Date_Value"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Neutral_Qualifier</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#FlightSurvey"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRatingValue"/>
+                <Variable IRI="/fs"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#NeutralFlightReview"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Positive_Qualifier</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#FlightSurvey"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRatingValue"/>
+                <Variable IRI="/fs"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#PositiveFlightReview"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Negative_Qualifier</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#FlightSurvey"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRatingValue"/>
+                <Variable IRI="/fs"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#NegativeFlightReview"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Not_Recommended</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#FlightSurvey"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRecommendationValue"/>
+                <Variable IRI="/fs"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="/v"/>
+                <Literal>no</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Negative_Recommendation"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Recommended</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#FlightSurvey"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRecommendationValue"/>
+                <Variable IRI="/fs"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="/v"/>
+                <Literal>yes</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Positive_Recommendation"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Not_Verified_Survey</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="/v"/>
+                <Literal>no</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasVerificationValue"/>
+                <Variable IRI="/fs"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#FlightSurvey"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Negative_Verification"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Verified_Survey</Literal>
+        </Annotation>
+        <Body>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="/v"/>
+                <Literal>yes</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasVerificationValue"/>
+                <Variable IRI="/fs"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#FlightSurvey"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Positive_Verification"/>
+                <Variable IRI="/fs"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Airbus</IRI>
+        <Literal>This instance represents the aircraft model Airbus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Airbus</IRI>
+        <Literal>Airbus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Airbus</IRI>
+        <IRI>https://dbpedia.org/page/Airbus</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Aircraft_Company</IRI>
+        <Literal>This class represents the company that created aircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Aircraft_Company</IRI>
+        <Literal>Aircraft_Company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Airline_Information</IRI>
+        <Literal>This class represents the airline related to the flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Airline_Information</IRI>
+        <Literal>Airline_Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AirportInformation</IRI>
+        <Literal>This class represents airport information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AirportInformation</IRI>
+        <Literal>Airport_Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AuthorCountry</IRI>
+        <Literal>This class represents the country of the flight survey&apos;s author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AuthorCountry</IRI>
+        <Literal>Author_Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AuthorInformation</IRI>
+        <Literal>This class contains information about the author of the flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AuthorInformation</IRI>
+        <Literal>Author_Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Boeing</IRI>
+        <Literal>This instance represents the aircraft model Boeing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Boeing</IRI>
+        <Literal>Boeing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Boeing</IRI>
+        <IRI>https://dbpedia.org/page/Boeing</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Business</IRI>
+        <Literal>This instance represents the trip reason Business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Business</IRI>
+        <Literal>Business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Business_Class</IRI>
+        <Literal>This instance represents the class of the seat Business Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Business_Class</IRI>
+        <Literal>Business_Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Couple_Leisure</IRI>
+        <Literal>This instance represents the trip reason couple leisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Couple_Leisure</IRI>
+        <Literal>Couple_Leisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Destination</IRI>
+        <Literal>This class represents the airport destination of the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Destination</IRI>
+        <Literal>Airport_Destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Economy_Class</IRI>
+        <Literal>This instance represents the class of the seat Economy Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Economy_Class</IRI>
+        <Literal>Economy_Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Family_Leisure</IRI>
+        <Literal>This instance represents the trip reason family leisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Family_Leisure</IRI>
+        <Literal>Family_Leisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#First_Class</IRI>
+        <Literal>This instance represents the class of the seat First Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#First_Class</IRI>
+        <Literal>First_Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlightDate</IRI>
+        <Literal>This class represents the date of the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlightDate</IRI>
+        <Literal>Flight_Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlightInformation</IRI>
+        <Literal>This class represents a specific flight information related to the flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlightInformation</IRI>
+        <Literal>Flight_Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlightSurvey</IRI>
+        <Literal>This class represents the flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlightSurvey</IRI>
+        <Literal>Flight_Survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlightSurveyInformation</IRI>
+        <Literal>This class represents the collected information about a flight survey,</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlightSurveyInformation</IRI>
+        <Literal>Flight_Survey_Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Flight_Survey_Qualifier</IRI>
+        <Literal>This class represents the qualifier of the Flight_Survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Flight_Survey_Qualifier</IRI>
+        <Literal>Flight_Survey_Qualifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Flight_Survey_Recommendation</IRI>
+        <Literal>This class represents the Flight_Survey recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Flight_Survey_Recommendation</IRI>
+        <Literal>Flight_Survey_Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Flight_Survey_Verification</IRI>
+        <Literal>This class represents the verification of the flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Flight_Survey_Verification</IRI>
+        <Literal>Flight_Survey_Verification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Madrid_Barajas</IRI>
+        <Literal>This instance represents de origin airport Madrid-Barajas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Madrid_Barajas</IRI>
+        <Literal>Madrid_Barajas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Madrid_Barajas</IRI>
+        <IRI>https://dbpedia.org/page/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NegativeFlightReview</IRI>
+        <Literal>This class represents a negative flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NegativeFlightReview</IRI>
+        <Literal>Negative_Flight_Survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Negative_Recommendation</IRI>
+        <Literal>This class represents a negative recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Negative_Recommendation</IRI>
+        <Literal>Negative_Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Negative_Verification</IRI>
+        <Literal>This class represents a negative verification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Negative_Verification</IRI>
+        <Literal>Negative_Verification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NeutralFlightReview</IRI>
+        <Literal>This class represents a neutral flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NeutralFlightReview</IRI>
+        <Literal>Neutral_Flight_Survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Origin</IRI>
+        <Literal>This class represents the airport origin of the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Origin</IRI>
+        <Literal>Airport_Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Portugal</IRI>
+        <Literal>This instance represents Portugal as author&apos;s country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Portugal</IRI>
+        <Literal>Portugal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Portugal_Lisboa</IRI>
+        <Literal>This instance represents the airport destination Portugal-Lisboa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Portugal_Lisboa</IRI>
+        <Literal>Portugal_Lisboa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Portugal_Lisboa</IRI>
+        <IRI>https://dbpedia.org/page/Lisbon_Airport</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PositiveFlightReview</IRI>
+        <Literal>This class represents a positive flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PositiveFlightReview</IRI>
+        <Literal>Positive_Flight_Survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Positive_Recommendation</IRI>
+        <Literal>This class represents a positive recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Positive_Recommendation</IRI>
+        <Literal>Positive_Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Positive_Verification</IRI>
+        <Literal>This class represents a positive verification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Positive_Verification</IRI>
+        <Literal>Positive_Verification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Premium_Economy</IRI>
+        <Literal>This instance represents the class of the seat Premium Economy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Premium_Economy</IRI>
+        <Literal>Premium_Economy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Published_Date</IRI>
+        <Literal>This class represents the date of the publication of the flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Published_Date</IRI>
+        <Literal>Published_Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Qatar_Airways</IRI>
+        <Literal>This instance represents the airline Qatar Airways</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Qatar_Airways</IRI>
+        <Literal>Qatar_Airways</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Qatar_Airways</IRI>
+        <IRI>https://dbpedia.org/page/Qatar_Airways</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ryanair</IRI>
+        <Literal>This class represents the airline Ryanair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ryanair</IRI>
+        <Literal>Ryanair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Ryanair</IRI>
+        <IRI>https://dbpedia.org/page/Ryanair</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SeatInformation</IRI>
+        <Literal>This class represents the information about seats in the flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SeatInformation</IRI>
+        <Literal>Seat_Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SeatType</IRI>
+        <Literal>This class represents the type of seat in the flight survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SeatType</IRI>
+        <Literal>Seat_Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Solo_Leisure</IRI>
+        <Literal>This instance represents the trip reason solo leisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Solo_Leisure</IRI>
+        <Literal>Solo_Leisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Spain</IRI>
+        <Literal>This instance represents Spain as author&apos;s country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spain</IRI>
+        <Literal>Spain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TripReason</IRI>
+        <Literal>This class represents the author reason for the trip</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TripReason</IRI>
+        <Literal>Trip_Reason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Year</IRI>
+        <Literal>This class represents the year of the published date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Year</IRI>
+        <Literal>Year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#flight_survey_001</IRI>
+        <Literal>This instance represents a single survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#flight_survey_001</IRI>
+        <Literal>flight_survey_001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#flightdate1</IRI>
+        <Literal>This instance represents the flight date 1 as example, it has a data property assertion with dateTime value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#flightdate1</IRI>
+        <Literal>flight_date_1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAircraft</IRI>
+        <Literal>Relates a Flight Survey to its related Aircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAircraft</IRI>
+        <Literal>has_Aircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAirline</IRI>
+        <Literal>Relates a Flight Survey to its related Airline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAirline</IRI>
+        <Literal>has_Airline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAirportDestination</IRI>
+        <Literal>Relates a Flight Survey to its related Airport_Destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAirportDestination</IRI>
+        <Literal>has_Airport_Destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAirportOrigin</IRI>
+        <Literal>Relates a Flight Survey to its related Airport_Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAirportOrigin</IRI>
+        <Literal>has_Airport_Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAuthorCountry</IRI>
+        <Literal>Relates a Flight Survey to its related Author_Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAuthorCountry</IRI>
+        <Literal>has_Author_Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAuthorTripReason</IRI>
+        <Literal>Relates a Flight Survey to its related Author_Trip_Reason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAuthorTripReason</IRI>
+        <Literal>has_Author_Trip_Reason</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasBodyText</IRI>
+        <Literal>Represents the body text given in the survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasBodyText</IRI>
+        <Literal>has_Body_Text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFlightSurveyInformation</IRI>
+        <Literal>Relates a Flight Survey to its related Flight Survey Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFlightSurveyInformation</IRI>
+        <Literal>has_Flight_Survey_Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFlySurveyId</IRI>
+        <Literal>Represents the id of the survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFlySurveyId</IRI>
+        <Literal>has_Fly_Survey_Id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRating</IRI>
+        <Literal>Relates a Flight Survey to its related Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRating</IRI>
+        <Literal>has_Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRatingValue</IRI>
+        <Literal>Represents the numeric value given in the survey, ranging from 0 to 10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRatingValue</IRI>
+        <Literal>has_Rating_Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRecommendation</IRI>
+        <Literal>Relates a Flight Survey to its related Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRecommendation</IRI>
+        <Literal>has_Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRecommendationValue</IRI>
+        <Literal>Represents the recommendation value given in the survey (yes or no)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRecommendationValue</IRI>
+        <Literal>has_Recommendation_Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSeatType</IRI>
+        <Literal>Relates a Flight Survey to its related Seat_Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSeatType</IRI>
+        <Literal>has_Seat_Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTtittle</IRI>
+        <Literal>Represent the tittle of the survey given in the survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTtittle</IRI>
+        <Literal>has_Tittle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasVerification</IRI>
+        <Literal>Relates a Flight Survey to its related Verification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasVerification</IRI>
+        <Literal>has_Verification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasVerificationValue</IRI>
+        <Literal>Represents the verification value given in the survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasVerificationValue</IRI>
+        <Literal>has_Verification_Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_Flight_Date_Value</IRI>
+        <Literal>Represents the flight date given in the survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_Flight_Date_Value</IRI>
+        <Literal>has_Flight_Date_Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_Published_Date</IRI>
+        <Literal>Relates a flight survey with his associated publised date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_Published_Date</IRI>
+        <Literal>has_Published_Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#2023</IRI>
+        <Literal>This instance represents the publication year of the survey 2023</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#2023</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2023</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#2024</IRI>
+        <Literal>This instance represents the publication year of the survey 2024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#2024</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2024</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
